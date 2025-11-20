@@ -50,11 +50,18 @@ root_span:
 ### Validate in CI
 
 ```
-$ kushi validate --spec ./checkout-flow.yaml --endpoint localhost:4317
+$ kushi validate remote ./checkout-flow.yaml \ 
+ --endpoint localhost:4317 \
+ --protocol otlphttp
+
+$ kushi validate remote ./checkout-flow.yaml \
+  --endpoint http://collector:4318 \
+  --jaeger http://jaeger:16686
 
 ✅ Root span "checkout-service" matched.
 ✅ Child span "payment-gateway" found.
 ❌ Error: Child span "inventory-update" missing attribute "db.system".
+
 ```
 
 ## Contributing
