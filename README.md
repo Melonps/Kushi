@@ -21,7 +21,7 @@ Currently, developers implement OpenTelemetry instrumentation blindly and only v
 
 ### 🚀 The Solution
 
-**TraceSpec** brings **Telemetry-Driven Development (TDD)** to your workflow.
+**Kushi** brings **Telemetry-Driven Development (TDD)** to your workflow.
 Define the *expected shape* of your trace before you write a single line of code.
 
 1.  **Define** your trace expectations in a declarative YAML.
