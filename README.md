@@ -8,6 +8,8 @@
 ---
 This project is currently in the idea / prototype stage.
 
+![the abstract of kushi](docs/kushi-abstract.png)
+
 ### 💡 The Problem
 
 You wouldn't build a REST API without **OpenAPI (Swagger)**.
